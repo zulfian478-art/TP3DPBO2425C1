@@ -6,13 +6,67 @@ Pemrograman Berbasis Objek untuk keberkahanNya maka saya tidak melakukan kecuran
 # Diagram
 
 ![tp3](https://github.com/user-attachments/assets/ee591c07-672e-4bca-9ab6-f3ecfab77015)
-![tp3](https://github.com/user-attachments/assets/15b93c31-1a8c-46c2-9db1-171b12250805)
 
 # DESAIN DIAGRAM
 
+Di sini ada 7 class yaitu:
+
+1. Makhluk hidup:
+   1. ID
+   2. Nama
+   3. Umur
+   
+2. Hewan:
+   1. Jenis makanan
+   2. Habitat
+3. Tumbuhan:
+   1. Jenis
+   2. Tinggi
+4. Jamur
+   1. Tipe
+   2. Beracun?
+5. Hutan
+   1. ID
+   2. Nama
+   3. Luas
+6. Wilayah
+    1. ID
+    2. Nama
+    3. Luas
+7. Ekosistem
+    1. ID
+    2. Nama
+    3. Jenis
+
 # PENJELASAN DESAIN
 
+DI sini di mulai dengan makhluk hidup sebagai pilar utama atau bisa di bilang kalau makhluk hidup adalah kepala dari program ini
+nah di sini dia menjadi data utama yang bisa di pecah menjadi beberapa bagian clas baru, nah di sini saya memecahnya menjadi beberapa
+bagian yaitu Hewan, Tumbuhan dan juga Jamur sebagai anak dari makhluk hidup tersebut, nah di sini dari masing masing 3 class ini memiliki datanya masing masing
+di mana tiap class sudah pasti berbeda beda cara untuk mengenalnya.
+class hewan: hewan ini berisi 2 atribut yakitu jenis makanan dan juga habitat yang di mana ini akan menjadi isi dari class ini dan menjadi data penting dari class ini
+class Tumbuhan : ini juga berisi 2 atribut yaitu jenis dan tinggi untuk dapat mengetahui spesifikasi dari tumbuhan tersebut
+class Jamur : class ini juga berisi 2 atribut yaitu Tipe dan juga beracun atau tidak, agar dapat menjadi data utama dalam mencangkup data jamur tersebut
+
+nah di sini juga akan di lanjut ke class berikutnya yaitu class hutan yang di mana di class ini memiliki Nama dan juga luas dari hutan yang menjadi tempat dari 3 atribut seelumnya, dimana hutan ini juga 
+membutuhkan 3 data class tersebut, namun bukan sebagai inheritence namun sebagai composite yang di mana hanya meminjam data dari sebelumnya saja.
+
+lanjut ke class selanjutnya yaitu Wilayah yang di maan ini memiliki atribut nama dan juga Luas sama seperti hutan namun ini lebih ke tempat di mana makhluk hidup itu akan bertahan hidup,
+dan class ini juga memiliki hubungan composite dengan class Hutan. 
+
+lanjut ke terakhir di sini ada class Ekosistem yang di mana ini akan menjadi data di mana makluk hidup itu akan termasuk jenis makhluk apa dan hidupnya nanti akan bagaimana, nah di sini juga
+class ini terhubung dengan class wilayah dan juga hubungannya merupakan composite.
+
+
 # PENJELASAN JALANNYA PROGRAM
+
+Saat kita sudah menjalankan program mau itu dari bahasa manapun kita akan masuk ke dalam program itu yang di mana program itu sudah memiliki 3 data awal,
+nah di situ juga memiliki 5 pilihan 
+1. tampilkan data; dimana di fitur ini kita bisa menampilkan data kita yang belum kita ubah maupum sudah kita ubah
+2. tambah data hewan, dimana nanti di dalamnya kita dapat mengisi data yang dimana ini akan beisi mengenai data data yang di butuhkan oleh hewan ini
+3. tambah data tumbuhan, dimana nanti di dalamnya akan terdapat bebrapa pertanyaan yang akan berhubungan dengan pertanyaan ini
+4. tambah data jamur, di sini dia akan memmberikan apa yang harun kita isi serta pertanyaan apakah jamur  itu beracun atau tidak
+5. exit, bila sudah selesai maka tombol ini dapat di gunakan untuk mengakhiri program
 
 # DOKUMENTASI
 # C++
